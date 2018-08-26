@@ -1,4 +1,4 @@
-#Reference from https://imapsync.lamiral.info/INSTALL.d/INSTALL.Ubuntu.txt
+# Reference from https://imapsync.lamiral.info/INSTALL.d/INSTALL.Ubuntu.txt
 
 FROM ubuntu:18.04
 

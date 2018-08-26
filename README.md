@@ -1,4 +1,4 @@
-# <a href="https://88plug.com">88plug</a> imapsync
+# 88plug imapsync
 Dockerfile for running imapsync
 
 # Easy Way
