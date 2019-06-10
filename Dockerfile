@@ -1,6 +1,5 @@
 # Reference from https://imapsync.lamiral.info/INSTALL.d/INSTALL.Ubuntu.txt
-
-FROM ubuntu:18.04
+FROM ubuntu:latest
 
 # Maintainer Information
 LABEL maintainer="88plug"
@@ -39,6 +38,12 @@ libtest-warn-perl       \
 make                    \
 cpanminus
 
-RUN cpanm Mail::IMAPClient && cpanm JSON::WebToken
+RUN cpanm Mail::IMAPClient && cpanm JSON::WebToken && cpanm File::Tail
+
+RUN apt-get install wget -y
+RUN wget -N https://imapsync.lamiral.info/imapsync \
+  https://imapsync.lamiral.info/prerequisites_imapsync \
+  && cp imapsync /usr/bin/imapsync \
+  && chmod +x /usr/bin/imapsync # just_a_comment_to_force_update 2018_09_13_14_44_03
 
 ENTRYPOINT ["/usr/bin/imapsync"]
