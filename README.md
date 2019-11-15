@@ -33,7 +33,7 @@ docker run -it 88plug/imapsync --regextrans2 's#(.*)#domain-folder.$1#' \
     --host2 mailserver2 --user2 user2@mailserver2 --password2 user2pass
 ```
 
-# From MailInABox to poste.io subfolder(domain-folder) for entire account
+# From mailinabox to poste.io subfolder(domain-folder) for entire account
 
 ```
 docker run -it 88plug/imapsync --regextrans2 's#(.*)#domain-folder.$1#' \
