@@ -1,7 +1,7 @@
 # 88plug imapsync
 Dockerfile for running imapsync for email migrations
 
-# Easy Way (add --dry to test any setting)
+# Easy Way (add --dry or --justfolders to test any setting)
 
 ```
 docker run -ti --rm 88plug/imapsync --automap --skipemptyfolders --usecache \
